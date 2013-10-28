@@ -1,0 +1,18 @@
+<h1> TODO </h1>
+<% @tasks.incomplete.each do |task| %>
+    <p><strong>Task Name:</strong> <%= task.name %></p>
+    <p>Completed?: <%= task.complete %></p>
+    <p>Employee Name: <%= task.employee.name %></p>
+    <p>Project Name: <%= task.project.name %></p>
+    </br>
+
+<% end %>
+
+<h1> Completed </h1>
+<% @tasks.complete.each do |task| %>
+    <p><strong>Task Name:</strong> <%= task.name %></p>
+    <p>Completed?: <%= task.complete %></p>
+    <p>Employee Name: <%= task.employee.name %></p>
+    <p>Project Name: <%= task.project.name %></p>
+    </br>
+<% end %>
